@@ -1,0 +1,240 @@
+@prefix : <http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5> .
+
+<http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#CapitalCityOf
+
+:CapitalCityOf rdf:type owl:ObjectProperty ;
+               
+               rdfs:domain :City ;
+               
+               rdfs:range :Country .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#HasCity
+
+:HasCity rdf:type owl:ObjectProperty ;
+         
+         rdfs:range :City ;
+         
+         rdfs:domain :Country .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#HasPresident
+
+:HasPresident rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :Country ;
+              
+              rdfs:range :President .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#OnContinent
+
+:OnContinent rdf:type owl:ObjectProperty ;
+             
+             rdfs:range :Continent ;
+             
+             rdfs:domain :Country .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Name
+
+:Name rdf:type owl:DatatypeProperty ;
+      
+      rdfs:range xsd:string ;
+      
+      rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Period
+
+:Period rdf:type owl:DatatypeProperty ;
+        
+        rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Population
+
+:Population rdf:type owl:DatatypeProperty ;
+            
+            rdfs:range xsd:int .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#PresidentsName
+
+:PresidentsName rdf:type owl:DatatypeProperty ;
+                
+                rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#City
+
+:City rdf:type owl:Class ;
+      
+      rdfs:subClassOf :Country .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent
+
+:Continent rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Country
+
+:Country rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Continent .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#President
+
+:President rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#City1
+
+:City1 rdf:type owl:NamedIndividual ;
+       
+       :CapitalCityOf :Country1 .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent1
+
+:Continent1 rdf:type owl:NamedIndividual ;
+            
+            :Name "Africa"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent2
+
+:Continent2 rdf:type owl:NamedIndividual ;
+            
+            :Name "Asia"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent3
+
+:Continent3 rdf:type owl:NamedIndividual ;
+            
+            :Name "Antartica"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent4
+
+:Continent4 rdf:type owl:NamedIndividual ;
+            
+            :Name "Australia / Oceania"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent5
+
+:Continent5 rdf:type owl:NamedIndividual ;
+            
+            :Name "Europe"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent6
+
+:Continent6 rdf:type owl:NamedIndividual ;
+            
+            :Name "North America"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Continent7
+
+:Continent7 rdf:type owl:NamedIndividual ;
+            
+            :Name "South America"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#Country1
+
+:Country1 rdf:type owl:NamedIndividual ;
+          
+          :Population "80000000"^^xsd:string ;
+          
+          :Name "Nama Negara"^^xsd:string ;
+          
+          :HasCity :City1 ;
+          
+          :OnContinent :Continent1 ;
+          
+          :HasPresident :President1 .
+
+
+
+###  http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#President1
+
+:President1 rdf:type owl:NamedIndividual ;
+            
+            :Period "2018-2019"^^xsd:string ;
+            
+            :PresidentsName "Nama president"^^xsd:string .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

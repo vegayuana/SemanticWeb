@@ -1,0 +1,27 @@
+.header{
+    height: 100px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    padding: 40px;
+    box-shadow: 1px 1px 3px #d3d3d3;
+}
+.title-bar{
+    position: absolute;
+    top: -15px;
+    width: 200px;
+}
+.main-block{
+    text-align:center;
+    margin:50px 200px;
+    box-sizing: border-box;
+    min-height:60vh;
+}
+.result{
+    margin-top:50px;
+}
+.footer{
+    height: 50px;
+    background-color: #fafafa;
+    border-top: 1px solid #A2ECD4;
+}

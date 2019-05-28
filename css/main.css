@@ -1,0 +1,32 @@
+body{
+    max-width: 100%;
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Nunito', sans-serif;
+}
+.title-web{
+    font-family: 'Nunito', sans-serif;
+}
+.rectangle {
+    width: 404px;
+    height: 6px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left:-50px;
+}
+.display-flex{
+    display: flex;
+}
+.position-relative{
+    position: relative;
+}
+button{
+    padding: 0px;
+    border: none;
+    background-color: inherit;
+}
+thead{
+    background-color: rgb(108, 117, 125);
+    color:white;
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/vegayuana/ontologies/2019/4/untitled-ontology-5#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#President"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CapitalCityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasPresident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OnContinent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Population"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PresidentsName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continent2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continent3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continent4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continent5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continent6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continent7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Country1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#President1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Continent"/>
+    </SubClassOf>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CapitalCityOf"/>
+        <NamedIndividual IRI="#City1"/>
+        <NamedIndividual IRI="#Country1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCity"/>
+        <NamedIndividual IRI="#Country1"/>
+        <NamedIndividual IRI="#City1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPresident"/>
+        <NamedIndividual IRI="#Country1"/>
+        <NamedIndividual IRI="#President1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OnContinent"/>
+        <NamedIndividual IRI="#Country1"/>
+        <NamedIndividual IRI="#Continent1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Continent1"/>
+        <Literal datatypeIRI="&xsd;string">Africa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Continent2"/>
+        <Literal datatypeIRI="&xsd;string">Asia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Continent3"/>
+        <Literal datatypeIRI="&xsd;string">Antartica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Continent4"/>
+        <Literal datatypeIRI="&xsd;string">Australia / Oceania</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Continent5"/>
+        <Literal datatypeIRI="&xsd;string">Europe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Continent6"/>
+        <Literal datatypeIRI="&xsd;string">North America</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Continent7"/>
+        <Literal datatypeIRI="&xsd;string">South America</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Country1"/>
+        <Literal datatypeIRI="&xsd;string">Nama Negara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Population"/>
+        <NamedIndividual IRI="#Country1"/>
+        <Literal datatypeIRI="&xsd;string">80000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Period"/>
+        <NamedIndividual IRI="#President1"/>
+        <Literal datatypeIRI="&xsd;string">2018-2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PresidentsName"/>
+        <NamedIndividual IRI="#President1"/>
+        <Literal datatypeIRI="&xsd;string">Nama president</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CapitalCityOf"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasCity"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasPresident"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OnContinent"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CapitalCityOf"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasPresident"/>
+        <Class IRI="#President"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OnContinent"/>
+        <Class IRI="#Continent"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Period"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Population"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PresidentsName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
